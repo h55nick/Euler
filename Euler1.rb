@@ -1,0 +1,1 @@
+(1..1000).to_a.map!{|b| (b%5)==0 || (b%3)==0 ? b : 1000}.uniq.inject(&:+) -1000 #will always have an extra 1000 because of default

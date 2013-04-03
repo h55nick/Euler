@@ -9,3 +9,10 @@ for i in (100..999).to_a.reverse
   end
 end
 puts n
+
+
+
+
+(100..999).to_a.map!{|a| (100..999).to_a.map!{|b| (b*a).to_s == (b*a).to_s.reverse ? b*a : 0 }}.flatten.max
+
+
